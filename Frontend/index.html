@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Проект шаблона веб-страницы (авторский дизайн, чистый Java Script)</title>
+</head>
+
+<body>
+  <div class=container>
+
+    <div class="header gabriola">
+      <div class="logo">Моя страничка</div>
+      <div class="main-menu-item"><button class="main-menu-button" id="sudoku-button">Судоку</button></div>
+      <div class="main-menu-item"><button class="main-menu-button" id="game2048-button">2048</button></div>
+    </div>
+
+    <div class="columns">
+
+      <div class="main-column">
+        <div class='content-bar'>
+          <H2>
+            Игры Судоку и 2048
+          </H2>
+
+          <HR/>
+
+          <H3>
+            Как играть в судоку
+          </H3>
+          
+          <P>Цифру к заполнению выбрать с помощью экранной клавиатуры. Поле для ввода цифры выбирается щелчком мыши на ячейке.</P>
+          <P>Кнопка М - множественный выбор - при выборе каждой новой цифры очередная добавляется в список возможных вариантов</P>
+          <P>Кнопка Е - очистка ячейки</P>
+          <P>Кнопка Х - начать текущую задачу с самого начала (не реализовано)</P>
+          
+          <HR/>
+
+          <H3>
+            Открытые вопросы
+          </H3>
+
+          <H4>
+            Судоку
+          </H4>
+
+          
+          <ul>
+            <li>При некорректном вводе цифры подсвечивать такую цифру</li>
+            <li>Можно заменить или очистить цифру, заданную в условии задачи</li>
+            <li>Выдавать сообщение о победе</li>
+            <li>Скрыть кнопки новой игры в модальном окне при выборе варианта (сама эта модальная форма еще очень сырая)</li>
+            <li>На бэкенде реализовать варинты Средний, Профессионал и Эксперт</li>
+          </ul>
+
+          <H4>
+            2048
+          </H4>
+
+          <ul>
+            <li>Если при выбранном сдвиге ход не прошел, новая цифра все равно появляется - исправить</li>
+            <li>Реализовать отмену хода</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-column">
+        <div>Автор</div>
+        <div>Ловцов Ярослав</div>
+      </div>
+    </div>
+
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
